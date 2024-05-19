@@ -14,11 +14,11 @@ Feature: Randomly adding a sticker to customer cart
 
     Scenario: Removing a random sticker when removing a single item (Single)
         When I remove a single item from my cart
-        Then a single random stickers should also be removed from my cart
+        Then a single random sticker should also be removed from my cart
 
     Scenario: Removing random stickers when removing mutiple items (Multiple)
         When I remove multiple items from my cart at once
-        Then a random stickers should also be removed from my cart for each product removed
+        Then a random sticker should also be removed from my cart for each product removed
 
     Scenario: Removing all stickers when removing all items (All)
         When I remove all items from my cart
