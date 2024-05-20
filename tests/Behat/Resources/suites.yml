@@ -2,9 +2,16 @@
 
 default:
     suites:
+        sticker_generator:
+            contexts:
+                - acme_sylius_example.context.ui.shop.sticker
+            filters:
+                tags: "@sticker_generator"
+                
         greeting_customer:
             contexts:
                 - acme_sylius_example.context.ui.shop.welcome
-
             filters:
-                tags: "@greeting_customer"
+                tags: "@greeting_customer"        
+
+

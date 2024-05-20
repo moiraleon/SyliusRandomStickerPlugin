@@ -1,4 +1,4 @@
-@adding_sticker
+@sticker_generator
 Feature: Randomly adding a sticker to customer cart
     In order to incentivize purchases
     As a Store Owner
