@@ -1,33 +1,5 @@
 <?php
 
-// declare(strict_types=1);
-
-// namespace Tests\Acme\SyliusExamplePlugin\Behat\Page\Shop;
-
-// use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
-
-// class StickerHandlerPage extends SymfonyPage
-// {
-//     /**
-//      * Add a random sticker to the cart.
-//      */
-//     public function addRandomStickerToCart(): void
-//     {
-//         // Logic to add a random sticker to the cart
-//         // You may need to implement this method based on your application's behavior
-//     }
-
-//     /**
-//      * Remove a random sticker from the cart.
-//      */
-//     public function removeRandomStickerFromCart(): void
-//     {
-//         // Logic to remove a random sticker from the cart
-//         // You may need to implement this method based on your application's behavior
-//     }
-// }
-
-
 declare(strict_types=1);
 
 namespace Tests\Acme\SyliusExamplePlugin\Behat\Page\Shop;
