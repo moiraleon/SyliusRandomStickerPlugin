@@ -65,7 +65,29 @@ final class StickerContext implements Context
         // Logic to verify that a random sticker is added to the cart for each product added
         // You may need to implement this method based on your application's behavior
     }
+    
+    /**
+     * @When I remove a single item from my cart
+     */
+    public function iRemoveASingleItemFromMyCart(): void
+    {
+        // Logic to remove a single item from the cart
+        // For example:
+        // $this->cartPage->open();
+        // $this->cartPage->removeSingleItemFromCart('Product SKU or ID');
 
+        // Now remove a single random sticker from the cart using the StickerHandlerPage
+        $this->stickerHandlerPage->removeRandomStickerFromCart();
+    }
+
+    /**
+     * @Then a single random sticker should also be removed from my cart
+     */
+    public function aSingleRandomStickerShouldAlsoBeRemovedFromMyCart(): void
+    {
+        // Logic to verify that a single random sticker is removed from the cart
+        // You may need to implement this method based on your application's behavior
+    }
     /**
      * @When I remove multiple items from my cart at once
      */
