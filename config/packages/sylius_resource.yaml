@@ -1,0 +1,7 @@
+sylius_resource:
+    resources:
+        acme.sticker:
+            driver: doctrine/orm
+            classes:
+                model: Acme\SyliusExamplePlugin\Entity\Sticker
+                repository: Sylius\Bundle\ResourceBundle\Doctrine\ORM\EntityRepository

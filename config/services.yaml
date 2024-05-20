@@ -1,0 +1,13 @@
+services:
+    acme_sylius_example.event_listener.cart_listener:
+        class: Acme\SyliusExamplePlugin\EventListener\CartListener
+        arguments:
+            - '@acme_sylius_example.service.sticker_selector'
+            - '@sylius.repository.order'
+        tags:
+            - { name: kernel.event_listener, event: sylius.order.pre_create, method: onCartChange }
+            
+    acme_sylius_example.service.sticker_selector:
+        class: Acme\SyliusExamplePlugin\Service\StickerSelector
+        arguments:
+            - '@doctrine.orm.entity_manager'
