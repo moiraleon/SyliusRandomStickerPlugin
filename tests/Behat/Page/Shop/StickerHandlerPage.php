@@ -14,7 +14,6 @@ class StickerHandlerPage extends SymfonyPage
     public function addRandomStickerToCart(): void
     {
         // Logic to add a random sticker to the cart
-        // You may need to implement this method based on your application's behavior
     }
 
     /**
@@ -23,7 +22,6 @@ class StickerHandlerPage extends SymfonyPage
     public function removeRandomStickerFromCart(): void
     {
         // Logic to remove a random sticker from the cart
-        // You may need to implement this method based on your application's behavior
     }
 
     /**

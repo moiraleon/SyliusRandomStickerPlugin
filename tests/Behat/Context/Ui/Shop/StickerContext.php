@@ -43,7 +43,6 @@ final class StickerContext implements Context
     public function aRandomStickerShouldBeAddedToMyCart(): void
     {
         // Logic to verify that a random sticker is added to the cart
-        // You may need to implement this method based on your application's behavior
         // For example:
         // Assert::assertTrue($this->cartPage->hasRandomStickerInCart());
     }
@@ -54,7 +53,6 @@ final class StickerContext implements Context
     public function iAddMultipleProductsToMyCartAtOnce(): void
     {
         // Logic to add multiple products to the cart simultaneously
-        // You may need to implement this method based on your application's behavior
     }
 
     /**
@@ -63,9 +61,8 @@ final class StickerContext implements Context
     public function aRandomStickerShouldBeAddedToMyCartForEachProduct(): void
     {
         // Logic to verify that a random sticker is added to the cart for each product added
-        // You may need to implement this method based on your application's behavior
     }
-    
+
     /**
      * @When I remove a single item from my cart
      */
@@ -86,7 +83,6 @@ final class StickerContext implements Context
     public function aSingleRandomStickerShouldAlsoBeRemovedFromMyCart(): void
     {
         // Logic to verify that a single random sticker is removed from the cart
-        // You may need to implement this method based on your application's behavior
     }
     /**
      * @When I remove multiple items from my cart at once
@@ -94,7 +90,6 @@ final class StickerContext implements Context
     public function iRemoveMultipleItemsFromMyCartAtOnce(): void
     {
         // Logic to remove multiple items from the cart simultaneously
-        // You may need to implement this method based on your application's behavior
     }
 
     /**
@@ -103,7 +98,6 @@ final class StickerContext implements Context
     public function aRandomStickerShouldAlsoBeRemovedFromMyCartForEachProduct(): void
     {
         // Logic to verify that a random sticker is removed from the cart for each product removed
-        // You may need to implement this method based on your application's behavior
     }
 
     /**
@@ -112,7 +106,6 @@ final class StickerContext implements Context
     public function iRemoveAllItemsFromMyCart(): void
     {
         // Logic to remove all items from the cart
-        // You may need to implement this method based on your application's behavior
     }
 
     /**
@@ -121,6 +114,5 @@ final class StickerContext implements Context
     public function allRandomStickersShouldAlsoBeRemovedFromMyCart(): void
     {
         // Logic to verify that all random stickers are removed from the cart
-        // You may need to implement this method based on your application's behavior
     }
 }
