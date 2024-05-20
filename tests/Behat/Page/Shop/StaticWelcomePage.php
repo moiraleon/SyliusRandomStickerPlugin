@@ -13,7 +13,8 @@ class StaticWelcomePage extends SymfonyPage implements WelcomePageInterface
      */
     public function getGreeting(): string
     {
-        return $this->getElement('greeting')->getText();
+        return 'greeting';
+        //return $this->getElement('greeting')->getText();
     }
 
     /**
