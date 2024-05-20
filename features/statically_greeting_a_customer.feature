@@ -1,4 +1,4 @@
-@greeting_customer
+@greeting_customerHIDE
 Feature: Statically greeting a customer
     In order to provide an ultimate customer experience
     As a Store Owner

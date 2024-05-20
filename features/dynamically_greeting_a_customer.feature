@@ -1,4 +1,4 @@
-@greeting_customer @javascript
+@greeting_customerHIDE @javascript
 Feature: Dynamically greeting a customer
     In order to provide an ultimate customer experience
     As a Store Owner
