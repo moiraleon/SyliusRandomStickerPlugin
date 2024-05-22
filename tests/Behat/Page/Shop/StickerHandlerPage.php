@@ -5,15 +5,28 @@ declare(strict_types=1);
 namespace Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Page\Shop;
 
 use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
+use Tests\RandomSticker\SyliusStickerGeneratorPlugin\SyliusStickerPlugin\Service\StickerSelector;
+
 
 class StickerHandlerPage extends SymfonyPage
 {
+    // private $stickerSelector;
+
+    // public function __construct(StickerSelector $stickerSelector)
+    // {
+    //     $this->stickerSelector = $stickerSelector;
+    // }
     /**
      * Add a random sticker to the cart.
      */
     public function addRandomStickerToCart(): void
     {
-        // Logic to add a random sticker to the cart
+        // //Get static sticker information
+        //  $staticSticker = $this->stickerSelector->getStaticSticker();
+        // // // Log static sticker information
+        //  var_dump($staticSticker); // Logging for testing view of sticker data
+
+        // // Additional logic to add a random sticker to the cart
     }
 
     /**
