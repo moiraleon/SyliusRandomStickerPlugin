@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Entity;
+namespace RandomSticker\SyliusStickerGeneratorPlugin\Entity;;
 
 use ApiPlatform\Metadata\ApiResource;
 use App\Repository\StickerRepository;

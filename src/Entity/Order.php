@@ -3,6 +3,7 @@
 namespace RandomSticker\SyliusStickerGeneratorPlugin\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Sylius\Component\Core\Model\Order as BaseOrder;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 
@@ -10,7 +11,7 @@ use Doctrine\Common\Collections\Collection;
  * @ORM\Entity
  * @ORM\Table(name="sylius_order")
  */
-class Order
+class Order extends BaseOrder
 {
     /**
      * @ORM\ManyToMany(targetEntity="RandomSticker\SyliusStickerGeneratorPlugin\Entity\Sticker")
@@ -23,6 +24,7 @@ class Order
 
     public function __construct()
     {
+        parent::__construct();  // Call the parent constructor to initialize base fields
         $this->stickers = new ArrayCollection();
     }
 
