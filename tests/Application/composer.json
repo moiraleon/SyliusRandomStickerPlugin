@@ -1,5 +1,5 @@
 {
-    "name": "sylius/plugin-skeleton-test-application",
-    "description": "Sylius application for plugin testing purposes (composer.json needed for project dir resolving)",
+    "name": "random-sticker/sylius-random-sticker-generator-plugin",
+    "description": "Plugin to auto add sticker to cart for each purchased product in Sylius.",
     "license": "MIT"
 }

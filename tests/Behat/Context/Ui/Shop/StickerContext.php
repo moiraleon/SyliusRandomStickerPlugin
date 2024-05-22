@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Acme\SyliusExamplePlugin\Behat\Context\Ui\Shop;
+namespace Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Context\Ui\Shop;
 
 use Behat\Behat\Context\Context;
-use Tests\Acme\SyliusExamplePlugin\Behat\Page\Shop\StickerHandlerPage;
+use Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Page\Shop\StickerHandlerPage;
 use Webmozart\Assert\Assert;
 
 final class StickerContext implements Context

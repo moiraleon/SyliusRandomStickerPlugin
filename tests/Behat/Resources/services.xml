@@ -5,18 +5,18 @@
         <defaults public="true" />
 
         <!-- Sticker Behat services here -->
-        <service id="acme_sylius_example.context.ui.shop.sticker" class="Tests\Acme\SyliusExamplePlugin\Behat\Context\Ui\Shop\StickerContext">
-            <argument type="service" id="acme_sylius_example.page.shop.sticker_handler" />
+        <service id="RandomSticker_sylius_example.context.ui.shop.sticker" class="Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Context\Ui\Shop\StickerContext">
+            <argument type="service" id="RandomSticker_sylius_example.page.shop.sticker_handler" />
         </service>
-        <service id="acme_sylius_example.page.shop.sticker_handler" class="Tests\Acme\SyliusExamplePlugin\Behat\Page\Shop\StickerHandlerPage" parent="sylius.behat.symfony_page" public="false" />
+        <service id="RandomSticker_sylius_example.page.shop.sticker_handler" class="Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Page\Shop\StickerHandlerPage" parent="sylius.behat.symfony_page" public="false" />
 
         <!-- Greeting Behat services here -->
-        <service id="acme_sylius_example.context.ui.shop.welcome" class="Tests\Acme\SyliusExamplePlugin\Behat\Context\Ui\Shop\WelcomeContext">
-            <argument type="service" id="acme_sylius_example.page.shop.static_welcome" />
-            <argument type="service" id="acme_sylius_example.page.shop.dynamic_welcome" />
+        <service id="RandomSticker_sylius_example.context.ui.shop.welcome" class="Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Context\Ui\Shop\WelcomeContext">
+            <argument type="service" id="RandomSticker_sylius_example.page.shop.static_welcome" />
+            <argument type="service" id="RandomSticker_sylius_example.page.shop.dynamic_welcome" />
         </service>
 
-        <service id="acme_sylius_example.page.shop.static_welcome" class="Tests\Acme\SyliusExamplePlugin\Behat\Page\Shop\StaticWelcomePage" parent="sylius.behat.symfony_page" public="false" />
-        <service id="acme_sylius_example.page.shop.dynamic_welcome" class="Tests\Acme\SyliusExamplePlugin\Behat\Page\Shop\DynamicWelcomePage" parent="sylius.behat.symfony_page" public="false" />
+        <service id="RandomSticker_sylius_example.page.shop.static_welcome" class="Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Page\Shop\StaticWelcomePage" parent="sylius.behat.symfony_page" public="false" />
+        <service id="RandomSticker_sylius_example.page.shop.dynamic_welcome" class="Tests\RandomSticker\SyliusStickerGeneratorPlugin\Behat\Page\Shop\DynamicWelcomePage" parent="sylius.behat.symfony_page" public="false" />
     </services>
 </container>

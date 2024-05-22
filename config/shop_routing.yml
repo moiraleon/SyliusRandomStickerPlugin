@@ -1,18 +1,18 @@
 # Delete these routes and define your own shop routes here
-acme_sylius_example_sticker_handler:
+RandomSticker_sylius_example_sticker_handler:
     path: /sticker-handler
     defaults:
-        _controller: Acme\SyliusExamplePlugin\Controller\StickerController::handleStickerAction
+        _controller: RandomSticker\SyliusStickerGeneratorPlugin\Controller\StickerController::handleStickerAction
         name: ~
 
-acme_sylius_example_static_welcome:
+RandomSticker_sylius_example_static_welcome:
     path: /static-welcome/{name}
     defaults:
-        _controller: Acme\SyliusExamplePlugin\Controller\GreetingController::staticallyGreetAction
+        _controller: RandomSticker\SyliusStickerGeneratorPlugin\Controller\GreetingController::staticallyGreetAction
         name: ~
 
-acme_sylius_example_dynamic_welcome:
+RandomSticker_sylius_example_dynamic_welcome:
     path: /dynamic-welcome/{name}
     defaults:
-        _controller: Acme\SyliusExamplePlugin\Controller\GreetingController::dynamicallyGreetAction
+        _controller: RandomSticker\SyliusStickerGeneratorPlugin\Controller\GreetingController::dynamicallyGreetAction
         name: ~
