@@ -1,36 +1,35 @@
 <?php
 
-namespace RandomSticker\SyliusStickerGeneratorPlugin\Entity;;
+namespace RandomSticker\SyliusStickerGeneratorPlugin\Entity;
 
-use ApiPlatform\Metadata\ApiResource;
-use App\Repository\StickerRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: StickerRepository::class)]
-#[ApiResource]
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="sticker")
+ */
 class Sticker
 {
-    #[ORM\Id]
-    #[ORM\GeneratedValue]
-    #[ORM\Column]
-    private ?int $id = null;
+    /**
+     * @ORM\Id
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
+     */
+    private $id;
 
-    #[ORM\Column(length: 255)]
-    private ?string $name = null;
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $name;
 
-    #[ORM\Column(length: 255)]
-    private ?string $image = null;
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $image;
 
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function setId(int $id): static
-    {
-        $this->id = $id;
-
-        return $this;
     }
 
     public function getName(): ?string
@@ -38,7 +37,7 @@ class Sticker
         return $this->name;
     }
 
-    public function setName(string $name): static
+    public function setName(string $name): self
     {
         $this->name = $name;
 
@@ -50,7 +49,7 @@ class Sticker
         return $this->image;
     }
 
-    public function setImage(string $image): static
+    public function setImage(string $image): self
     {
         $this->image = $image;
 
