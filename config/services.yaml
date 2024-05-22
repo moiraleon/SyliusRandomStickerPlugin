@@ -1,0 +1,4 @@
+services:
+    your_plugin.sticker_selector:
+        class: RandomSticker\SyliusStickerGeneratorPlugin\Service\StickerSelector
+        arguments: ['@doctrine.orm.entity_manager']
