@@ -1,0 +1,7 @@
+sylius_fixtures:
+    suites:
+        default:
+            fixtures:
+                stickers:
+                    options:
+                        amount: 10
